@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="938.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.user.ItemNewsController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="76.0">
+            <children>
+                <Label fx:id="headerNewsItem" alignment="BOTTOM_LEFT" contentDisplay="CENTER" prefHeight="18.0"
+                       prefWidth="827.0" text="Название статьи" underline="true">
+                    <font>
+                        <Font size="29.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="numberNewsItem" alignment="TOP_RIGHT" contentDisplay="RIGHT" prefHeight="44.0"
+                       prefWidth="77.0" text="№12">
+                    <font>
+                        <Font size="32.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" focusTraversable="true" prefWidth="936.0" style="-fx-background-color: whie;">
+            <children>
+                <Label fx:id="messageNewsItem" alignment="CENTER" contentDisplay="CENTER"
+                       maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="936.0"
+                       text="Практически каждый веб-мастер, оптимизатор или владелец интернет-ресурса постоянно сталкивается с понятием «уникальные тексты (статьи) для сайта». Действительно, для успешной раскрутки и результативного поискового продвижения требуется качественный текстовый контент в профессиональном исполнении. Теперь это непреложное правило и обязательное условие для всех разработчиков веб-ресурсов. Ведь поисковые системы всегда ценят материалы от WaterMillSky с высокой уникальностью. Как Яндекс, так и Google, в числе прочих факторов ранжирования сайта, выделяют единственные в своем роде тексты с исключительным содержанием. Делая заказ на копирайтинг статей, каждый клиент профессионального копирайтера рассчитывает получить уникальные материалы. Это связано с принципами поискового ранжирования, согласно которым поисковики повсеместно игнорируют плагиат, которые препятствует быстрой индексации страниц и в отдельных случаях приводит к пессимизации сайта (понижение позиций или полное исключение из поисковой выдачи Яндекса и Гугл). Также следует помнить об авторском праве — интеллектуальная собственность защищается законом и без согласия правообладателя нельзя «заимствовать» понравившиеся материалы. "
+                       wrapText="true">
+                    <padding>
+                        <Insets bottom="13.0"/>
+                    </padding>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>
