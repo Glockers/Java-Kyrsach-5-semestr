@@ -1,3 +1,0 @@
-Chart(date=2022-12-01, count=2)
-Chart(date=2022-12-11, count=3)
-Chart(date=2022-12-12, count=3)
