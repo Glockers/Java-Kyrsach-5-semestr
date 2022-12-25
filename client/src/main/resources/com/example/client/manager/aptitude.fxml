@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="720.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.manager.AptitudeController">
+    <children>
+        <TableView fx:id="table" layoutX="17.0" layoutY="246.0" prefHeight="458.0" prefWidth="980.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="Номер тестирования" />
+                <TableColumn fx:id="namePostColumn" prefWidth="203.0" text="Название теста" />
+                <TableColumn fx:id="nameTestColumn" prefWidth="161.0" text="Название теста" />
+                <TableColumn fx:id="sizeColumn" prefWidth="230.0" text="Размер надбавки за прохождение" />
+                <TableColumn fx:id="dateStartColumn" prefWidth="223.0" text="Дата начала проведения" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button layoutX="100.0" layoutY="162.0" mnemonicParsing="false" onAction="#add" text="Доабвить" />
+        <Button layoutX="223.0" layoutY="162.0" mnemonicParsing="false" onAction="#edit" text="Изменить" />
+        <Button layoutX="767.0" layoutY="207.0" mnemonicParsing="false" onAction="#del" text="Удалить" />
+        <Button layoutX="867.0" layoutY="207.0" mnemonicParsing="false" text="Обновить таблицу" />
+      <TextField fx:id="nameAllowanceField" layoutX="169.0" layoutY="77.0" promptText="Название тестирования" />
+      <Spinner fx:id="spinnerField" layoutX="169.0" layoutY="39.0" />
+      <Label layoutX="52.0" layoutY="43.0" text="Размер надбавки" />
+      <TextField fx:id="postIdField" layoutX="169.0" layoutY="118.0" promptText="Номер должности" />
+    </children>
+</Pane>

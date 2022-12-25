@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0"
+      prefWidth="704.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.client.controller.access_point.AuthorizationController">
+    <children>
+        <HBox prefHeight="149.0" prefWidth="704.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="199.0" prefWidth="704.0"
+                       style="-fx-background-color: #A5D1C5;" text="Авторизация" textFill="WHITE">
+                    <font>
+                        <Font size="49.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="428.0" prefWidth="704.0">
+            <children>
+                <AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="370.0" minWidth="600.0" prefHeight="424.0"
+                            prefWidth="704.0" style="-fx-background-color: #ABA5ED;">
+                    <children>
+                        <TextField fx:id="loginField" layoutX="104.0" layoutY="124.0" prefHeight="35.0"
+                                   prefWidth="499.0" promptText="Ваш Логин">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </TextField>
+                        <Label layoutX="104.0" layoutY="97.0" text="Логин">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="107.0" layoutY="181.0" text="Пароль">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Button layoutX="62.0" layoutY="319.0" mnemonicParsing="false" onAction="#authHandler"
+                                text="Войти">
+                            <font>
+                                <Font size="22.0"/>
+                            </font>
+                        </Button>
+                        <Button layoutX="513.0" layoutY="319.0" mnemonicParsing="false" onAction="#onClickRegistration"
+                                text="Регистрация">
+                            <font>
+                                <Font size="22.0"/>
+                            </font>
+                        </Button>
+                        <PasswordField fx:id="passwordField" layoutX="104.0" layoutY="208.0" prefHeight="35.0"
+                                       prefWidth="499.0" promptText="Ваш Пароль">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </PasswordField>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>

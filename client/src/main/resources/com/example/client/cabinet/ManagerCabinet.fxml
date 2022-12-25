@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.cabinet.ManagerCabinetController">
+    <children>
+        <VBox prefHeight="720.0" prefWidth="609.0" style="-fx-background-color: #BAA5E5;" stylesheets="@../style/style.css">
+            <children>
+                <Pane prefHeight="138.0" prefWidth="259.0">
+                    <children>
+                        <Label layoutX="22.0" layoutY="14.0" text="IT Предприятие" textFill="WHITE">
+                            <font>
+                                <Font size="30.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="189.0" layoutY="61.0" prefHeight="17.0" prefWidth="52.0" text="Manager" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Button id="red" fx:id="btnMagerUser" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="319.0" styleClass="red" text="Управление пользователями" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnMangerProject" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="345.0" text="Управление проектами" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnManagerPost" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="365.0" text="Управление должностями" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnManagerOrder" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="473.0" text="Управление заявками" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            <Button fx:id="btnNews" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="399.0" text="Управление новостями" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="allowanceBtn" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="399.0" text="Управление надбавками" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="testBtn" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="399.0" text="Упраление тестами" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnChart" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="357.0" text="Отчет" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+                <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#handleClicks" prefHeight="57.0" prefWidth="255.0" text="Выход" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <VBox prefHeight="720.0" prefWidth="1372.0" style="-fx-background-color: #B0D1CE;">
+            <children>
+                <StackPane prefHeight="878.0" prefWidth="1022.0">
+                    <children>
+                        <Pane fx:id="pnUser" prefHeight="568.0" prefWidth="924.0" style="-fx-background-color: #B0D1CE;" />
+                        <Pane fx:id="pnProject" prefHeight="720.0" prefWidth="1158.0" style="-fx-background-color: #B0D1CE;" />
+                        <Pane fx:id="pnPost" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B0D1CE;" />
+                        <Pane fx:id="pnOrder" prefHeight="200.0" prefWidth="1022.0" style="-fx-background-color: #B0D1CE;" />
+                  <Pane fx:id="pnNews" prefHeight="200.0" prefWidth="1022.0" style="-fx-background-color: #B0D1CE;" />
+                  <Pane fx:id="pnChart" prefHeight="200.0" prefWidth="1022.0" style="-fx-background-color: #B0D1CE;" />
+                  <Pane fx:id="pnAllowance" prefHeight="200.0" prefWidth="1022.0" style="-fx-background-color: #B0D1CE;" />
+                  <Pane fx:id="pnTest" prefHeight="200.0" prefWidth="1022.0" style="-fx-background-color: #B0D1CE;" />
+                    </children>
+                </StackPane>
+            </children>
+        </VBox>
+    </children>
+</HBox>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="522.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.access_point.RegistrationController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="152.0" prefWidth="696.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="142.0" prefWidth="696.0" style="-fx-background-color: #A5D1C5;" text="Регистрация">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="430.0" prefWidth="696.0">
+            <children>
+                <AnchorPane prefHeight="426.0" prefWidth="760.0" style="-fx-background-color: #ABA5ED;">
+                    <children>
+                        <TextField fx:id="loginField" layoutX="283.0" layoutY="104.0" prefHeight="26.0" prefWidth="270.0" promptText="Логин" />
+                        <PasswordField fx:id="passwordField" layoutX="285.0" layoutY="152.0" prefHeight="26.0" prefWidth="270.0" promptText="Пароль" />
+                        <Button fx:id="btnRegister" layoutX="48.0" layoutY="328.0" mnemonicParsing="false" onAction="#registerHandler" prefHeight="45.0" prefWidth="146.0" text="Зарегистрироваться" />
+                        <Button fx:id="btnReturn" layoutX="547.0" layoutY="328.0" mnemonicParsing="false" onAction="#returnHandler" prefHeight="45.0" prefWidth="120.0" text="Вернуться назад" />
+                        <Label layoutX="165.0" layoutY="109.0" prefHeight="17.0" prefWidth="102.0" text="Логин" />
+                        <Label layoutX="165.0" layoutY="157.0" prefHeight="17.0" prefWidth="76.0" text="Пароль" />
+                        <PasswordField fx:id="repeatPasswordField" layoutX="285.0" layoutY="199.0" prefHeight="26.0" prefWidth="270.0" promptText="Повторите пароль" />
+                        <Label layoutX="141.0" layoutY="204.0" text="Повторите пароль" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</VBox>
